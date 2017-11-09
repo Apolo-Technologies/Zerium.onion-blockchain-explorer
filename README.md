@@ -1,65 +1,30 @@
-# Onion Monero Blockchain Explorer
+# Zerium Onion Blockchain Explorer
 
-Currently available Monero blockchain explorers have several limitations which are of 
-special importance to privacy-oriented users:
+The First Zerium Blockchain Pro-Privacy Blockchain Explorer
 
- - they use JavaScript,
- - have images which might be used for [cookieless tracking](http://lucb1e.com/rp/cookielesscookies/),
- - track users activates through google analytics,
- - are closed sourced,
- - are not available as hidden services,
- - do not support Monero testnet,
- - have limited JSON API.
+ - No JavaScript,
+ - No images (to avoid cookie tracking) [cookieless tracking](http://lucb1e.com/rp/cookielesscookies/),
+ - No tracking users activates through google analytics,
+ - Open source,
+ - Available as a hidden services,
+ - Support with Zerium's Testnet,
 
 
-In this example, these limitations are addressed by development of
-an Onion Monero Blockchain Explorer. The example not only shows how to use 
-Monero C++ libraries, but also demonstrates how to use:
-
- - [crow](https://github.com/ipkn/crow) - C++ micro web framework 
- - [mstch](https://github.com/no1msd/mstch) - C++ {{mustache}} templates
- - [json](https://github.com/nlohmann/json) - JSON for Modern C++
- - [fmt](https://github.com/fmtlib/fmt) - Small, safe and fast string formatting library
 
 ## Addresses
 
 Tor users:
  
- - [http://dvwae436pd7nt4bc.onion](http://dvwae436pd7nt4bc.onion) (Front-end templates are [maintained by @suhz](https://github.com/suhz/onion-monero-blockchain-explorer/tree/moneroexplorer.com/src/templates)).
- - [http://libwh5lvouddzei4.onion/](http://libwh5lvouddzei4.onion/) - bleeding edge version.
-  
-Clearnet versions:
+## - Coming soon (Coming soon.onion) 
 
- - [http://139.162.32.245:8081/](http://139.162.32.245:8081/) - down for now.
- - [https://xmrchain.net/](https://xmrchain.net/) - https enabled, most popular and very stable.
- - [https://MoneroExplorer.com/](https://moneroexplorer.com/) - nice looking one, https enabled.
- - [https://monerohash.com/explorer/](https://monerohash.com/explorer/) - nice looking one, https enabled.
- - [http://explore.MoneroWorld.com](http://explore.moneroworld.com) - same as the second one. 
- - [https://moneroexplorer.pro/](https://moneroexplorer.pro/) - nice looking one, https enabled.
- - [https://explorer.monero-otc.com/](https://explorer.monero-otc.com/) - https enabled.
- - [http://monerochain.com/](http://monerochain.com/) - JSON API based, multiple nodes.   
- - [http://atesti.mooo.com:8081/](http://atesti.mooo.com:8081/) - Proof of Existence built with Monero and IPFS. 
-  
-Clearnet testnet Monero version:
+i2p users (main Zerium network):
 
- - [http://139.162.32.245:8082/](http://139.162.32.245:8082/) - bleeding edge version, no https. 
- - [https://testnet.xmrchain.com/](https://testnet.xmrchain.com/) - https enabled.
- - [https://explorer.monero-otc.com/](https://explorer.monero-otc.com/) - https enabled.
- - [https://testnet.MoneroExplorer.com/](https://testnet.moneroexplorer.com/) - https enabled.
+## - [Comingsoon.i2p]
 
-i2p users (main Monero network):
-
- - [http://7o4gezpkye6ekibhgpkg7v626ze4idsirapufzrefkdysa6zxhha.b32.i2p/](http://7o4gezpkye6ekibhgpkg7v626ze4idsirapufzrefkdysa6zxhha.b32.i2p/)
-
-Alternative block explorers:
-
-- [http://moneroblocks.info](http://moneroblocks.info/)
-- [https://monerobase.com](https://monerobase.com/)
-- [http://chainradar.com](http://chainradar.com/xmr/blocks)
  
-## Onion Monero Blockchain Explorer features
+## Zerium Onion Blockchain Explorer features
 
-The key features of the Onion Monero Blockchain Explorer are:
+The key features of the ZOBE are:
 
  - no javascript, no cookies, no web analytics trackers, no images,
  - open sourced,
@@ -67,13 +32,12 @@ The key features of the Onion Monero Blockchain Explorer are:
  - showing encrypted payments ID,
  - showing ring signatures,
  - showing transaction extra field,
- - showing public components of Monero addresses,
- - decoding which outputs and mixins belong to the given Monero address and viewkey,
- - can prove that you send Monero to someone,
+ - showing public components of ZRM addresses,
+ - decoding which outputs and mixins belong to the given Zerium address and viewkey,
  - detailed information about mixins, such as, mixins'
  age, timescale, mixin of mixins,
  - showing number of amount output indices,
- - support Monero testnet network,
+ - support Zerium testnet network,
  - tx checker and pusher for online pushing of transactions,
  - estimate possible spendings based on address and viewkey,
  - can provide total amount of all miner fees.
@@ -82,12 +46,12 @@ The key features of the Onion Monero Blockchain Explorer are:
 
 ## Compilation on Ubuntu 16.04
 
-##### Compile latest Monero release v0.11
+##### Compile latest Zerium release
 
-Download and compile recent Monero into your home folder:
+Download and compile recent Zerium into your home folder:
 
 ```bash
-# first install monero dependecines
+# first install Zerium dependecines
 sudo apt update
 
 sudo apt install git build-essential cmake libboost-all-dev miniupnpc libunbound-dev graphviz doxygen libunwind8-dev pkg-config libssl-dev libcurl4-openssl-dev libgtest-dev libreadline-dev libzmq3-dev
